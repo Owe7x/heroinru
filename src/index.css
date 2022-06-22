@@ -1,0 +1,23 @@
+@import url(./vendor/normalize.css);
+@import url(./fonts/stylesheet.css);
+@import url(./blocks/Main/Main.css);
+@import url(./blocks/Menu/Menu.css);
+@import url(./blocks/Cursor/Cursor.css);
+@import url(./blocks/Services/Services.css);
+@import url(./blocks/Footer/Footer.css);
+@import url(./blocks/Cases/Cases.css);
+@import url(./blocks/media/Main/main.css);
+@import url(./blocks/media/Menu/menu.css);
+@import url(./blocks/media/Services/services.css);
+@import url(./blocks/media/Cases/cases.css);
+
+body {
+  margin: 0;
+  font-family: 'Muller';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Muller';
+}

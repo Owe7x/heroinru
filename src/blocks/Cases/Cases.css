@@ -1,0 +1,157 @@
+.header-services {
+    overflow: hidden;
+}
+.header-cases__main {
+    min-height: 400px;
+}
+.header-cases__main::after {
+    width: 1668px;
+    height: 950px;
+    top: -250px;
+    left: 5%;
+    background-image: url(../../images/Cases/header-bg.svg);
+}
+
+.header-cases__title {
+    font-size: 227px;
+    line-height: 227px;
+}
+.header-cases__title-thin {
+    font-size: 66px;
+    line-height: 65px;
+}
+.header-services::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 0;
+    width: 193px;
+    height: 373px;
+    left: 0;
+    background-image: url(../../images/Cases/barcodes-stacked-white.png);
+}
+.header-cases {
+    background-image: url(../../images/Cases/bg.png);
+}
+.header-cases::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 80px);
+    width: 161px;
+    height: 147px;
+    background-image: url(../../images/Cases/green-small-rounded-clean.png);
+    z-index: 1;
+}
+.header-cases__info::after {
+    display: none;
+}
+
+.cases {
+    background-image: url(../../images/Cases/bg-2.png);
+    overflow-x: hidden;
+}
+.cases__container {
+    max-width: 1424px;
+    margin: 0 auto;
+    padding: 120px 40px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(419px, 1fr) );
+    column-gap: 83px;
+    row-gap: 274px;
+}
+
+.case__brand {
+    margin-bottom: 42px;
+}
+.case__pic {
+    margin-bottom: 58px;
+}
+.case__name {
+    width: max-content;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #9B9B9B;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+.case__name::after {
+    display: block;
+    content: '';
+    width: 122px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: -140px;
+    background: #9B9B9B;
+}
+.case__title {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.case__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin: 0 0 45px 0;
+}
+.case__group {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 15px;
+}
+.case__direction {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid rgba(155, 155, 155, 0.87);
+}
+.case__sumbol {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.87);
+    text-shadow: 0px 0px 4px rgba(255, 209, 209, 0.6);
+    padding: 7px 5px 4.5px;
+    margin: 0;
+    border-right: 0.5px solid rgba(155, 155, 155, 0.87);
+}
+.case__direction-name {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding: 7px 10px 4.5px;
+}
+.case-mt {
+    margin-top: 500px;
+}
+.case-mt-minus {
+    margin-top: -500px;
+}
+
+
+.ParallaxVideo{ 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.ParallaxVideo video{ 
+    width: 100%;
+}
+.parallax-img {
+    margin-bottom: 60px;
+}
+
+.react-parallax-bgimage {
+    height: 680px!important;
+}
