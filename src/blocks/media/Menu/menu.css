@@ -1,18 +1,49 @@
+@media screen and (max-width: 1850px) { 
+    .button__menu-active {
+        right: 10%!important;
+    }
+}
+@media screen and (max-width: 1550px) { 
+    .menu__link {
+        font-size: 80px;
+        line-height: 100%;
+    }
+    .menu__contacts-title {
+        margin-bottom: 55px;
+    }
+    .menu__contacts {
+        margin-bottom: 55px;
+    }
+    .menu__contacts:last-child {
+        margin: 55px 0 0;
+    }
+    .menu__container-contacts {
+        margin-left: 140px;
+    }
+    .header-main__path--menu {
+        margin-bottom: 230px;
+    }
+    .menu__container-centr_contacts-active {
+        padding-top: 110px;
+    }
+    .header-main__path--active {
+        left: 200px;
+    }
+}
 @media screen and (max-width: 1440px) {
     .button__menu {
-        right: 2%;
+        right: 10%;
         top: 40%;
         transform: translateY(-35px);
     }
-    .menu__social::after {
-        display: block;
-        content: '';
-        width: 111px;
-        height: 1px;
-        background: #fff;
-        position: absolute;
-        top: -50px;
-        right: -30%;
+    .header-main__path--active {
+        left: unset;
+    }
+
+}
+@media screen and (max-width: 1300px ) {
+    .menu__container-contacts {
+        margin-left: 100px;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -21,6 +52,10 @@
     }
     .menu__social::after {
         right: -20%;
+    }
+    .menu__container-contacts {
+        margin-left: 0;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 768px) {
@@ -42,6 +77,10 @@
     }
 }
 @media screen and (max-width: 640px) {  
+    .header-main__path--menu {
+        margin-top: 0;
+        margin-bottom: 59px;
+    }
     .menu__wrapper {
         flex-direction: column;
     }
@@ -65,7 +104,13 @@
     .menu__contacts {
         margin-bottom: 50px;
     }
-
+    .menu__container-centr_contacts-active {
+        padding: 0;
+        
+    }
+    .header-main__path--active {
+        top: 0;
+    }
 }
 @media screen and (max-width: 520px) {  
     .button__menu {
@@ -74,6 +119,50 @@
     }
     .button__menu span {
         height: 30px;
+    }
+    .button__menu_span-unactive {
+        display: block!important;
+    }
+    .button__menu-main .button__menu {
+        flex-direction: column;
+        row-gap: 6px;
+        top: 63px;
+    }
+    .button__menu-main .button__menu span {
+        width: 30px;
+        height: 2px;
+    }
+    .button__menu-main .button__menu-active span:nth-child(1) {
+        transform: rotate(45deg);
+        left: 5px;
+        
+    }
+    .button__menu-main .button__menu-active span:nth-child(2) {
+        transform: rotate(-45deg);
+        right: -4px;
+        top: -8px;
+    }
+    .button__menu-active span:nth-child(3) {
+        display: none!important;
+    }
+    .menu__container-menu {
+        justify-content: unset;
+        padding: 0 20px 30px;
+    }
+    .menu__container-contacts {
+        justify-content: unset;
+        padding: 0 20px;
+        max-width: unset;
+        width: unset;
+    }
+    .menu__contacts:last-child {
+        margin: 40px 0 0;
+    }
+    .menu__contacts {
+        margin-bottom: 40px;
+    }
+    .menu__container-centr {
+        justify-content: flex-end;
     }
 }
 @media screen and (max-width: 475px) {  
@@ -104,7 +193,6 @@
     }
 
 }
-
 @media screen and (max-height: 900px) {  
     .menu__nav {
         row-gap: 40px;
@@ -116,38 +204,48 @@
         padding-top: 70px;
     }
 }
-@media screen and (max-height: 900px) {  
+@media screen and (max-height: 870px) {  
     .menu__nav {
-        row-gap: 27px;
+        row-gap: 35px;
     }
     .menu__container-menu {
         margin-top: 25px;
     }
     .menu__container-contacts {
-        padding-top: 35px;
+        padding-top: 20px;
     }
+
 }
-@media screen and (max-height: 700px) {  
+@media screen and (max-height: 800px) {  
     .menu__nav {
-        row-gap: 20px;
-    }
-    .menu__contacts {
-        margin-bottom: 30px;
+        row-gap: 35px;
     }
     .menu__social::after {
         top: -20px;
     }
+    .menu__container-centr_contacts-active {
+        padding-top: 0px;
+    }
 }
-@media screen and (max-height: 600px) {  
+@media screen and (max-height: 700px) {  
     .menu__link {
         font-size: 45px;
         line-height: 45px;
     }
     .menu__contacts {
         row-gap: 20px;
+        margin-bottom: 30px;
+    }
+    .menu__nav {
+        row-gap: 25px;
+    }
+    .header-main__path--menu {
+        font-size: 20px;
+        margin-bottom: 50px;
     }
     .menu__contacts-title {
-        font-size: 22px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
+
+
 }

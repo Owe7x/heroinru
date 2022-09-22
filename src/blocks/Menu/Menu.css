@@ -1,79 +1,99 @@
 .button__menu {
     display: flex;
     column-gap: 9px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 5%;
-    z-index: 6;
+    z-index: 9998;
     padding: 10px;
     transform: translateY(-30px);
 }
+.button__menu::after {
+    display: block;
+    content: 'M E N U';
+    position: absolute;
+    top: 34px;
+    left: -31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Muller';
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+.button__menu-active::after {
+    display: none;
+}
 .button__menu span {
     width: 2px;
-    height: 40px;
+    height: 63px;
     background: #fff;
     display: block;
     position: relative;
-    z-index: 6;
-    transition: transform 0.5s linear ;
+    z-index: 9999;
+    transition: transform 0.25s linear ;
 }
-.button__menu-active span:first-child {
+.button__menu-active {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+}
+
+.button__menu-active span:nth-child(1) {
     transform: rotate(45deg);
     left: 5px;
     
 }
-.button__menu-active span:last-child {
+.button__menu-active span:nth-child(2) {
     transform: rotate(-45deg);
-    right: 5px;
+    right: 4px;
 }
 
 .menu {
     position: fixed;
-    z-index: 4;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
     background: #000;
-    
-    transform: translateY(-100%);
     opacity: 0;
-    transition: opacity 1s linear;
+    visibility: hidden;
+    transition-property: opacity, height;
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 1s;
     
 }
 .menu-active {
-    top: 0;
-    z-index: 5;
+    visibility: visible;
+    height: 100%;
     opacity: 1;
-    transform: translateY(0);
-    transition: opacity 1s linear;
-    
-    
+    transition-delay: 0s, 0s;    
 }
 .menu__wrapper {
     display: flex;
-    max-width: 1440px;
     margin: 0 auto;
     height: 100%;
 }
 .menu__container-contacts {
-    max-width: 620px;
+    max-width: 1100px;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: 244px;
     align-items: center;
     
 }
 
 .menu__container-menu {
-    max-width: 820px;
+    max-width: 818px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
+    margin-right: 50px;
 }
 .menu__container-menu::after {
     display: block;
@@ -94,28 +114,31 @@
     position: absolute;
     right: 0;
     transform: translateY(0);
-    transition: transform 2.3s linear;
+    transition: transform 1.15s linear;
 }
 .menu__container-centr {
     max-width: max-content;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
     width: max-content;
 }
 .menu__container-centr_contacts {
     transform: translateY(100px);
     opacity: 0;
-    transition: transform 5s linear;
+    transition: transform 2.5s linear;
 
 }
 .menu__container-centr_contacts-active {
     transform: translateY(0px);
-    transition: transform 2.6s linear;
-    animation: fdsseq 7s forwards;
+    transition: transform 1.3s linear;
+    animation: fdsseq 3.5s forwards;
 }
 .menu__contacts-title {
-    text-transform: uppercase;
-    font-size: 28px;
+
+    font-size: 18px;
     color: #fff;
-    margin: 0 0 28px;
+    margin: 0 0 70px;
 }
 .menu__contact-item {
     font-size: 18px;
@@ -123,51 +146,51 @@
 
     color: #FFFFFF;
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .menu__contacts {
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
-    margin-bottom: 88px;
+    row-gap: 15px;
+    margin-bottom: 70px;
 }
 .menu__social {
     display: flex;
-    column-gap: 10px;
+    column-gap: 50px;
     position: relative;
 }
-.menu__social-item {
+.menu__social-item--telegram {
     font-size: 18px;
     line-height: 18px;
 
     color: #FFFFFF;
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 0.4;
+    margin: 0;
+}
+.menu__social-item--instagram {
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 0.4;
     margin: 0;
 }
 
-.menu__social::after {
-    display: block;
-    content: '';
-    width: 111px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    top: -20px;
-    right: -60%;
-}
+
 .menu__nav {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 45px;
 }
 .menu__link {
-    font-size: 80px;
-    line-height: 78px;
+    font-size: 100px;
+    line-height: 100px;
     text-transform: lowercase;
-    color: #CACACA;
+    color: #FFFFFF;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     font-weight: 100;
     font-family: 'HelveticaNeueCyr-Thin';
 }
@@ -194,32 +217,32 @@
 .menu__item {
     opacity: 0; 
     transform: translateY(40px);
-    transition: transform 2.5s linear;
-    transition: opacity 1s linear;
+    transition: transform 1.25s linear;
+    transition: opacity 0.5s linear;
 }
 .menu__item-active {
-    animation: fdsseq 1s forwards;
+    animation: fdsseq 0.5s forwards;
     transform: translateY(0px);
-    transition: transform 2.5s linear;
+    transition: transform 1.25s linear;
 }
 .menu__item:nth-child(1) {
-    animation-delay: 1.2s;
+    animation-delay: 0.6s;
     transform: translateY(0px);
 }
 .menu__item:nth-child(2) {
-    animation-delay: 1.4s;
+    animation-delay: 0.7s;
     transform: translateY(60px);
 }
 .menu__item:nth-child(3) {
-    animation-delay: 1.6s;
+    animation-delay: 0.8s;
     transform: translateY(80px);
 }
 .menu__item:nth-child(4) {
-    animation-delay: 1.8s;
+    animation-delay: 0.9s;
     transform: translateY(100px);
 }
 .menu__item:nth-child(5) {
-    animation-delay: 2s;
+    animation-delay: 1s;
     transform: translateY(120px);
 }
 
@@ -238,7 +261,55 @@
 .menu__item-active:nth-child(5) {
     transform: translateY(0px);
 }
+.button__menu_span-unactive {
+    display: none!important;
+}
+.button__menu_span-unactive-all {
+    display: none!important;
+}
+.header-main__path--menu {
+    font-size: 28px;
+    font-weight: 300;
+    display: block;
+}
+.header-main__path--active {
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    animation: fdsseq 3.5s forwards;
+}
+.button__menu-active {
+    right: 10%;
+}
+.button__menu-active span {
+    width: 1px;
+    height: 68px;
+}
 @keyframes fdsseq { 
     100% { opacity: 1; }
 }
 
+
+
+.menu__social a:first-child:hover  {
+    background-image: linear-gradient(89.92deg, #60B3EC 16.25%, #95D1FA 99.9%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 1;
+}
+.menu__social a:last-child:hover {
+    background-image: linear-gradient(89.82deg, #640E9B 8.84%, #8B0A75 58.21%, #CA923F 103.29%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 1;
+
+}
+.margin-0 {
+    margin: 0;
+}
+.menu__contacts:last-child {
+    margin: 70px 0 0;
+    row-gap: 15px;
+}

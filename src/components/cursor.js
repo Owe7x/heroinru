@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-export default function Cursor({isActives}) {
+export default function Cursor({isActives, isActiveInst , isActiveTelegram}) {
     const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
 
 
@@ -21,7 +21,7 @@ export default function Cursor({isActives}) {
 
   return (
 
-    <div className={isActives ? 'cursor cursor-active' : 'cursor'} style={{ transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)` } }>
+    <div className={isActives ? `cursor cursor-active ${isActiveInst ? 'cursor-active--inst ': '' ||  isActiveTelegram ? 'cursor-active--telegram' : ''} ` : 'cursor '} style={{ transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)` } }>
     </div>
   );
 }

@@ -23,7 +23,7 @@ function Footer() {
                     ALL RIGHTS RESERVED
                 </p>
                 <div className="footer__contact">
-                    <a className="footer__contact-link" href="mailto:MORE@HEROINMARKETING.COM">MORE@HEROINMARKETING.COM</a>
+                    <a className="footer__contact-link" href="mailto:giveme@heroinmarketing.com">giveme@heroinmarketing.com</a>
                     <a className="footer__contact-link" href="tel:+74994042756">+7 499 404 27 56</a>
                 </div>
            </div>

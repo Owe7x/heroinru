@@ -1,0 +1,25 @@
+.politic__title {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+.politic__name {
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.politic__text {
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.politic__site {
+    text-decoration: none;
+    color: #fff;
+}

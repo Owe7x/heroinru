@@ -1,0 +1,871 @@
+.popup {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, height;
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 1s;
+    background: rgba(0, 0, 0, 0.2);
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.popup__active {
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+}
+.popup__container {
+    background-color: transparent;
+    max-width: 1018px;
+    width: 100%;
+    max-height: 95vh;
+    overflow: hidden;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  .popup__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    color: #fff;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .innvoation {
+    background-image: url(../../images/Cases/case-1/background.png);
+    padding: 30px 65px;
+    position: relative;
+    background-size: cover;
+    border-left: 15px solid #6AFF67;
+  }
+  .innvoation::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-1/case-1-img.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 505px;
+    height: 458px;
+  }
+  .innvoation::before {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-1/star.svg);
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 97px;
+    height: 177px;
+  }
+  .popup__group {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+  }
+  .popup__name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 113%;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+  }
+  .popup__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 98%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin: 0 0 20px 0;
+  }
+  .popup__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 113%;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 300px;
+  }
+  .popup__subtitle-2 {
+    max-width: 400px;
+  }
+  .popup__group-stat {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 30px;
+  }
+  .popup__text-stat {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .popup__text-stat--fs-50 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    margin: 0;
+  }
+  .popup__group-block {
+    display: flex;
+    column-gap: 23px;
+    row-gap: 18px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .popup__group-block::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-1/icon-1.svg);
+    position: absolute;
+    top: -50px;
+    left: 25%;
+    width: 89px;
+    height: 89px;
+  }
+  .popup__group-block::before {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-1/barcodes-stacked-white.png);
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    width: 157px;
+    height: 106px;
+  }
+  .popup__block {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.900069px solid #000000;
+    border-radius: 18.0014px;
+    padding: 30px 10px 10px 22px;
+    min-height: 140px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+  }
+  .popup__block-2 {
+    max-width: 412px;
+    width: 100%;
+  }
+  .popup__block-title {
+    font-weight: 500;
+    font-size: 21.6016px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+  }
+  .popup__block-subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .popup__text-brand {
+    margin: 0 0 25px 0;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 113%;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    padding-left: 30px;
+    border-left: 1px solid #fff;
+  }
+  .popup__logo-2 {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  /* Forbes */
+
+  .forbes  {
+    background-image: url(../../images/Cases/case-2/background.jpg);
+    padding: 30px 65px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #C8FF31;
+  }
+  .forbes::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-2/case-img.png);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 505px;
+    height: 458px;
+  }
+  .popup__group-block-2 {
+    flex-wrap: wrap
+  }
+  .popup__group-block-2::after {
+    display: none;
+  }
+  .popup__group-block-2::before {
+    display: none;
+  }
+
+  /* Pepsico */
+  .pepsico {
+    background-image: url(../../images/Cases/case-3/background.jpg);
+    padding: 30px 65px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #FF9212;
+  }
+  .pepsico::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-3/case-img.png);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 547px;
+    height: 487px;
+  }
+  .pepsico::before {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-3/star.svg);
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 172px;
+    height: 222px;
+  }
+  .popup__name-light {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 113%;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    max-width: 460px;
+    margin-bottom: 30px;
+  }
+
+  /* Russian */
+  .russian {
+    background-image: url(../../images/Cases/case-4/background.jpg);
+    padding: 10px 65px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #E4395F;
+  }
+  .russian::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-4/case-img.png);
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    width: 474px;
+    height: 501px;
+  }
+  .popup__stat-img {
+    margin-bottom: 17px;
+  }
+
+  .popup__speaker {
+    display: flex;
+    column-gap: 5px;
+  }
+  .popup__speaker-group {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+  }
+  .popup__speaker-author {
+    display: flex;
+  }
+  .popup__speaker-logo {
+    width: 53px;
+  }
+  .popup__speaker-text {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 113%;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .speaker__name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5px 0 0;
+  }
+
+  /* Export */
+
+  .export {
+    background-image: url(../../images/Cases/case-5/background.jpg);
+    padding: 40px 50px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #2342FF;
+  }
+  .export::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-5/case-img.png);
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 327px;
+    height: 473px;
+  }
+  .popup--no-after::after {
+    display: none;
+  }
+  .popup--no-after::before {
+    display: none;
+  }
+
+  /* Yandex */
+  .yandex {
+    background-image: url(../../images/Cases/case-6/background.jpg);
+    padding: 40px 50px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #F1292B;
+  }
+  .yandex::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-6/case-img.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 474px;
+    height: 552px;
+  }
+
+
+  /* BDSR */
+  .bdsr {
+    background-image: url(../../images/Cases/case-7/background.jpg);
+    padding: 40px 50px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #FF9212;
+  }
+  .bdsr::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-7/case-img.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 508px;
+    height: 471px;
+  }
+  .popup__group--center {
+    align-items: center;
+  }
+  .popup__speaker-text--bdsr {
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+  }
+  .popup__block-3 {
+    max-width: 280px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .popup__speaker-2 {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .popup__speaker-author-2 {
+    column-gap: 35px;
+  }
+
+  /* x5 */
+  .x5 {
+    background-image: url(../../images/Cases/case-8/background.jpg);
+    padding: 70px 50px 75px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #FF9212;
+  }
+  .x5::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-8/case-img.png);
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 548px;
+    height: 480px;
+  }
+  .popup__name--foter {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    max-width: 290px;
+  }
+  .popup__block--h-194 {
+    height: 194px;
+  }
+  .popup__group-block--x5 {
+    margin-bottom: 60px;
+  }
+
+  /* village */
+  .village {
+    background-image: url(../../images/Cases/case-9/background.jpg);
+    padding: 70px 50px 75px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #C8FF31;
+  }
+
+  /* Kaspersky */
+  .kaspersky {
+    background-image: url(../../images/Cases/case-10/background.jpg);
+    padding: 70px 50px 75px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #FF9212;
+  }
+  .kaspersky::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-10/case-img.png);
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 665px;
+    height: 490px;
+  }
+  .popup__block-li {
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 12px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18.0014px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .popup__block-li::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/li.svg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .popup__title--kaspersky {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 98%;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #00B497;
+  }
+  .popup__subtitle--kaspersky {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 116%;
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: #00B396;
+  }
+
+  /* Nobel */
+
+  .nobel {
+    background-image: url(../../images/Cases/case-11/background.jpg);
+    padding: 70px 50px 75px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #FF9212;
+  }
+  .nobel::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-11/case-img.png);
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 452px;
+    height: 341px;
+  }
+  .nobel::before {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-11/case-img-2.png);
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    width: 388px;
+    height: 369px;
+  }
+  .popup__title--nobel {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .popup__speaker-group--nobel {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .popup__speaker-3 {
+    align-items: center;
+    column-gap: 35px;
+  }
+
+  /* Sheremetevo */
+  .sheremetyevo  {
+    background-image: url(../../images/Cases/case-12/bg.jpg);
+    padding: 70px 50px 75px;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #F1292B;
+  }
+  .sheremetyevo::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-12/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 437px;
+    height: 303px;
+  }
+  .popup__min-height-80 {
+    min-height: 100px;
+  }
+
+  /* Education Salon */
+  .educationSalon  {
+    background-image: url(../../images/Cases/case-13/background.jpg);
+    padding:  50px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #C8FF31;
+  }
+  .educationSalon::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-13/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 534px;
+    height: 334px;
+    z-index: -1;
+  }
+  .popup__speaker-3 {
+    column-gap: 50px;
+    align-items: center;
+  }
+
+  /* Avon */
+  .avon  {
+    background-image: url(../../images/Cases/case-14/background.png);
+    padding: 50px 35px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #2342FF;
+  }
+  .avon::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-14/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 401px;
+    height: 425px;
+    z-index: -1;
+  }
+  .popup__group-stat-2 {
+    margin-bottom: 70px;
+  }
+
+  /* education */
+  .education  {
+    background-image: url(../../images/Cases/case-15/background.png);
+    padding:  50px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #2342FF;
+  }
+  .education::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-15/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 396px;
+    background-size: contain;
+    height: 461px;
+    z-index: -1;
+  }
+  .popup__title-2 {
+    font-size: 40px;
+    line-height: 98%;
+  }
+
+  /* infourok */
+  .infourok  {
+    background-image: url(../../images/Cases/case-16/background.png);
+    padding:  50px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #F9C112;
+  }
+  .infourok::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-16/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 415px;
+    height: 309px;
+    z-index: -1;
+  }
+  .speaker__name-subtitle {
+    margin: 0;
+    font-size: 9px;
+    line-height: 100%;
+    max-width: 140px;
+    text-align: center;
+  }
+  .popup__speaker-group-2 {
+    align-items: center;
+  }
+
+  /* Skolkovo */
+  .skolkovo  {
+    background-image: url(../../images/Cases/case-17/background.jpg);
+    padding:  50px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #6AFF67;
+  }
+  .skolkovo::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-17/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 551px;
+    height: 681px;
+    z-index: -1;
+  }
+  .popup__group-block-3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .popup__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 60px;
+  }
+  .popup__button {
+    border: 0.779661px solid #4FBF6F;
+    border-radius: 100px;
+    padding: 7px 25px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #4FBF6F;
+  }
+  /* bitrix */
+  .bitrix  {
+    background-image: url(../../images/Cases/case-18/background.jpg);
+    padding:  50px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #6AFF67;
+  }
+  .bitrix::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-18/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 394px;
+    height: 700px;
+    z-index: -1;
+  }
+  .popup__block-4 {
+    max-width: 355px;
+    width: 100%;
+    min-height: 100px;
+  }
+  .test-text {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .popup__container--767 {
+    max-width: 1000px;
+  }
+  .popup__text-absolut__title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .popup__text-absolut__subtitle {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 100px;
+
+  }
+  .popup__text-absolut {
+    position: absolute;
+    top: 353px;
+    right: 154px;
+  }
+  .popup__text-absolut-2 {
+    position: absolute;
+    top: 353px;
+    right: 364px;
+  }
+
+  /*  dnk */ 
+
+  .dnk  {
+    background-image: url(../../images/Cases/case-19/background.png);
+    padding: 50px 35px ;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow-x: hidden;
+    border-left: 15px solid #1215E3;
+  }
+  .dnk::after {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-19/case-img.png);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 340px;
+    background-size: contain;
+    height: 448px;
+    z-index: -1;
+  }
+  .dnk::before {
+    display: block;
+    content: '';
+    background-image: url(../../images/Cases/case-19/case-img-2.png);
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    width: 335px;
+    background-size: contain;
+    height: 317.5px;
+    z-index: -1;
+  }
+  .popup__title--dnk {
+    max-width: 700px;
+  }
+  .popup__group-block--dnk {
+    flex-direction: column;
+    margin-left: auto;
+    max-width: 412px;
+    margin-bottom: 0;
+  }
+  .popup__group-block--dnk::after {
+    display: none;
+  }
+  .popup__group-block--dnk::before {
+    display: none;
+  }
+  .popup__text-absolut-3 {
+    position: absolute;
+    bottom: 186px;
+    left: 295px;
+}

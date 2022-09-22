@@ -6,16 +6,26 @@
 @import url(./blocks/Services/Services.css);
 @import url(./blocks/Footer/Footer.css);
 @import url(./blocks/Cases/Cases.css);
+@import url(./blocks/Popup/Popup.css);
+@import url(./blocks/Loader/Loader.css);
+@import url(./blocks/Form/Form.css);
+@import url(./blocks/About/About.css);
+@import url(./blocks/Politic/Politic.css);
 @import url(./blocks/media/Main/main.css);
 @import url(./blocks/media/Menu/menu.css);
 @import url(./blocks/media/Services/services.css);
 @import url(./blocks/media/Cases/cases.css);
+@import url(./blocks/media/Popup/popup.css);
+@import url(./blocks/media/Form/form.css);
+@import url(./blocks/media/About/about.css);
+@import url(./blocks/media/Politic/politic.css);
 
 body {
   margin: 0;
   font-family: 'Muller';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {

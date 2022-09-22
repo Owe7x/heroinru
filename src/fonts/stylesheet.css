@@ -24,3 +24,20 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Muller';
+    src: url('MullerLight.woff2') format('woff2'),
+        url('MullerLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('MullerUltraLight.woff2') format('woff2'),
+        url('MullerUltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}

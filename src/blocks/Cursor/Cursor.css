@@ -46,7 +46,12 @@
     left: 50%;
     transform: translateX(-3px);
 }
-
+.cursor-active--inst {
+    background: linear-gradient(209.36deg, #4243D3 9.95%, #B339B6 39.15%, #EA3B99 55.14%, #ED6B33 72.76%, #F2A63F 86.96%);
+}
+.cursor-active--telegram {
+    background: #27A5E6;
+}
 @media screen and (max-width: 1024px) {  
     .cursor {
         display: none;
